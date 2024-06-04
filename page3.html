@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post3</title>
+	<meta charset="UTF-8">
+    <link href="style_page.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="controller.js"></script>
+    <script src="model.js"></script>
+	<script src="view.js"></script>
+	<style type="text/css">
+		header { 
+		background-color: white;
+		padding: 10px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		text-align: center;
+		background-size: cover;
+		color: black;
+		font-size: 24px;
+		font-family: Arial;
+		margin: 15px auto;
+		font-weight: bold;
+		}  
+		</style>
+</head>
+
+<body>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			showCom();
+			});
+
+	</script>
+	<header>
+        <div class="header">
+      
+             <div class="menu">
+             <ul>
+             <li><img src="logo.png" alt="Logo" style="max-height: 40px;max-width: 40px;"></li>
+             <li><a id="LatestNews" href="index.html">Latest Posts</a></li>
+             <li><a id="AboutUs" href="about.html">About</a></li>
+             <li><a id="YourAccount" href="account.html">Account</a></li>
+             <li><a id="Register" href="sign.html">Sign Up</a></li>
+             <li><a id="LogIn" href="login.html">Log In</a></li>
+             </ul>
+             </div>
+        </div>
+        <h1>Baguette</h1>
+		<p>Date: May 22, 2024</p>
+        </header>
+
+	<main>
+		<img src="baguette.jpg" alt="baguette" style="display: block; margin-left: auto; margin-right: auto;">
+		<p><b>History and Origin</b>
+            The baguette is a long, thin loaf of French bread known for its crispy crust and soft interior. Its origins can be traced back to the late 19th century in France. The word "baguette" means "wand" or "baton" in French, reflecting its shape.<br> <br> 
+
+			<b>Characteristics</b>
+A traditional baguette is made from a lean dough of flour, water, yeast, and salt. It is characterized by its length (usually around 65 cm), its crisp, golden-brown crust, and its soft, airy crumb. The baking process involves high temperatures and steam, which help create the baguette's distinctive texture.<br> <br> 
+<b>Cultural Significance</b>
+In France, the baguette is more than just bread; it is a cultural symbol. The French consume it daily, often fresh from the bakery. It is commonly used in sandwiches, served with cheese, or simply enjoyed with butter. The baguette has also gained international popularity, symbolizing French culinary excellence.
+</p>
+	</main>
+
+	<footer>
+		<div id="comArea">
+			<p>Comments</p>
+		</div>
+		
+		<form onsubmit="">
+			<label for="name">Your name:</label>
+			<input type="text" id="name" name="name" required>
+	
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+	
+			<label for="comment">Your comment:</label>
+			<textarea id="comment" name="comment" required></textarea>
+	
+			<button type="submit" style="background-color: #55cfff;">Send</button>
+			</form>
+	</footer>
+</body>
+</html>
